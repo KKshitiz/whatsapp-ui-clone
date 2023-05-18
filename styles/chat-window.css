@@ -1,0 +1,24 @@
+#chat-window {
+  flex-grow: 2;
+  background: url(../images/chat-bg.png);
+}
+
+#chat-window-header {
+  display: flex;
+  height: var(--header-height);
+  padding: 15px 20px;
+  background-color: var(--primary);
+}
+
+#chat-window-footer {
+  display: flex;
+  column-gap: 10px;
+  height: 62px;
+  width: 100%;
+  padding: 15px 25px;
+  background-color: var(--primary);
+}
+
+#chat-box {
+  flex-grow: 1;
+}

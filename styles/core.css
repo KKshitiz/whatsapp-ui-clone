@@ -3,7 +3,7 @@
   --color-1: #06cf9c;
   --color-1: #53bdeb;
   --color-1: #00a884;
-  --color-1: #2a3942;
+  --light-grey: #2a3942;
   --primary: #202c33;
   --color-1: #1d282f;
   --color-1: #182229;
@@ -12,6 +12,7 @@
   --color-1: #0b141a;
   --color-1: #0b141a59;
   --color-1: #000000b3;
+  --border-color: var(--light-grey);
   --header-height: 59px;
   --footer-height: 62px;
 }

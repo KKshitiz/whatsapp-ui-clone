@@ -9,6 +9,9 @@
 
 	<link rel="stylesheet" href="styles/core.css">
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/sidebar.css">
+	<link rel="stylesheet" href="styles/chat-window.css">
+
 </head>
 
 <body>
@@ -16,7 +19,7 @@
 
 		<!-- Sidebar -->
 		<aside id="sidebar">
-			<header>
+			<header id="sidebar-header">
 				<img src="https://picsum.photos/50" alt="">
 				<div class="toolbar">
 					<img src="icons/communities.svg" alt="">
@@ -25,35 +28,35 @@
 					<img src="icons/menu.svg" alt="">
 				</div>
 			</header>
-			<section>
-				<div id="chats">
-					<input type="search" name="" id="" placeholder="Search or start a new chat">
-					<img src="icons/filter.svg" alt="">
-				</div>
+			<div id="sidebar-search">
+				<input type="search" name="" id="" placeholder="Search or start a new chat">
+				<img src="icons/filter.svg" alt="">
+			</div>
+			<section id="sidebar-contents">
 				<div id="chats-list">
-					<div class="chat">Chat 1</div>
-					<div class="chat">Chat 2</div>
-					<div class="chat">Chat 3</div>
-					<div class="chat">Chat 4</div>
-					<div class="chat">Chat 5</div>
-					<div class="chat">Chat 6</div>
-					<div class="chat">Chat 7</div>
-					<div class="chat">Chat 8</div>
-					<div class="chat">Chat 9</div>
-					<div class="chat">Chat 10</div>
-					<div class="chat">Chat 11</div>
-					<div class="chat">Chat 12</div>
-					<div class="chat">Chat 13</div>
-					<div class="chat">Chat 14</div>
-					<div class="chat">Chat 15</div>
+					<div class="chat-tile">Chat 1</div>
+					<div class="chat-tile">Chat 2</div>
+					<div class="chat-tile">Chat 3</div>
+					<div class="chat-tile">Chat 4</div>
+					<div class="chat-tile">Chat 5</div>
+					<div class="chat-tile">Chat 6</div>
+					<div class="chat-tile">Chat 7</div>
+					<div class="chat-tile">Chat 8</div>
+					<div class="chat-tile">Chat 9</div>
+					<div class="chat-tile">Chat 10</div>
+					<div class="chat-tile">Chat 11</div>
+					<div class="chat-tile">Chat 12</div>
+					<div class="chat-tile">Chat 13</div>
+					<div class="chat-tile">Chat 14</div>
+					<div class="chat-tile">Chat 15</div>
 				</div>
 			</section>
 		</aside>
 		<!-- Sidebar ends -->
 
 		<!-- Chat window -->
-		<section id="main-content">
-			<header>
+		<section id="chat-window">
+			<header id="chat-window-header">
 				<img src="" alt="">
 				<h3>Person 1</h3>
 				<img src="icons/search.svg" alt="">
@@ -62,7 +65,7 @@
 			<div>
 
 			</div>
-			<footer>
+			<footer id="chat-window-footer">
 				<img src="icons/emoji.svg" alt="">
 				<img src="icons/attachment.svg" alt="">
 				<input type="search" name="message" id="chat-box" placeholder="Type a message">

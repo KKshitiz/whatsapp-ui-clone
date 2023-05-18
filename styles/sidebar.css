@@ -1,0 +1,47 @@
+#sidebar {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  background-color: var(--primary);
+}
+
+#sidebar-search {
+  display: flex;
+  column-gap: 10px;
+  height: 40px;
+  padding: 5px 8px;
+}
+
+#sidebar-contents {
+  flex-grow: 1;
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-tile {
+  display: flex;
+  color: white;
+  height: 72px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.chat-tile::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 0.1px;
+  background-color: var(--border-color);
+}

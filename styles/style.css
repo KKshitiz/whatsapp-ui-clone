@@ -1,0 +1,104 @@
+:root {
+  --bg-color: #111b21;
+  --color-1: #06cf9c;
+  --color-1: #53bdeb;
+  --color-1: #00a884;
+  --color-1: #2a3942;
+  --primary: #202c33;
+  --color-1: #1d282f;
+  --color-1: #182229;
+  --color-1: #111b21;
+  --color-1: #101a20;
+  --color-1: #0b141a;
+  --color-1: #0b141a59;
+  --color-1: #000000b3;
+  --header-height: 59px;
+  --footer-height: 62px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: solid 0.2px pink; */
+}
+
+img {
+  background-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+main {
+  display: flex;
+  align-items: stretch;
+  /* background-color: red; */
+}
+
+#sidebar {
+  flex-grow: 1;
+}
+
+#main-content {
+  flex-grow: 2;
+  background: url(../images/chat-bg.png);
+}
+
+#sidebar > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  background-color: var(--primary);
+}
+
+#main-content > header {
+  display: flex;
+  height: var(--header-height);
+  padding: 15px 20px;
+  background-color: var(--primary);
+}
+
+#main-content > footer {
+  display: flex;
+  column-gap: 10px;
+  height: 62px;
+  width: 100%;
+  padding: 15px 25px;
+  background-color: var(--primary);
+}
+
+#chat-box {
+  flex-grow: 1;
+}
+
+.chat {
+  display: flex;
+  color: white;
+  height: 72px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.chat::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+aside > section {
+  display: flex;
+  flex-direction: column;
+}
+
+#chats-list {
+  flex-grow: 1;
+  height: 400px;
+  overflow: auto;
+}

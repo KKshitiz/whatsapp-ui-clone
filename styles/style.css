@@ -1,28 +1,3 @@
-:root {
-  --bg-color: #111b21;
-  --color-1: #06cf9c;
-  --color-1: #53bdeb;
-  --color-1: #00a884;
-  --color-1: #2a3942;
-  --primary: #202c33;
-  --color-1: #1d282f;
-  --color-1: #182229;
-  --color-1: #111b21;
-  --color-1: #101a20;
-  --color-1: #0b141a;
-  --color-1: #0b141a59;
-  --color-1: #000000b3;
-  --header-height: 59px;
-  --footer-height: 62px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* border: solid 0.2px pink; */
-}
-
 img {
   background-color: white;
 }
@@ -34,11 +9,13 @@ body {
 main {
   display: flex;
   align-items: stretch;
-  /* background-color: red; */
+  height: 100%;
 }
 
 #sidebar {
   flex-grow: 1;
+  /* height: 100%; */
+  /* overflow: auto; */
 }
 
 #main-content {
@@ -52,6 +29,11 @@ main {
   align-items: center;
   height: var(--header-height);
   background-color: var(--primary);
+}
+
+#sidebar > section {
+  /* height: 100%; */
+  overflow: auto;
 }
 
 #main-content > header {
@@ -98,7 +80,5 @@ aside > section {
 }
 
 #chats-list {
-  flex-grow: 1;
-  height: 400px;
-  overflow: auto;
+  /* flex-grow: 1; */
 }

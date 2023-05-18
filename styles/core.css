@@ -1,6 +1,41 @@
+:root {
+  --bg-color: #111b21;
+  --color-1: #06cf9c;
+  --color-1: #53bdeb;
+  --color-1: #00a884;
+  --color-1: #2a3942;
+  --primary: #202c33;
+  --color-1: #1d282f;
+  --color-1: #182229;
+  --color-1: #111b21;
+  --color-1: #101a20;
+  --color-1: #0b141a;
+  --color-1: #0b141a59;
+  --color-1: #000000b3;
+  --header-height: 59px;
+  --footer-height: 62px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* border: solid 0.2px pink; */
+}
+
+html,
+body {
+  height: 100%;
 }

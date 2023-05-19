@@ -3,6 +3,7 @@
 
   display: flex;
   flex-direction: column;
+  border-right: solid 1px var(--border-color);
 }
 
 #sidebar-header {
@@ -11,13 +12,28 @@
   align-items: center;
   height: var(--header-height);
   background-color: var(--primary);
+  padding: 20px 15px;
 }
 
-#sidebar-search {
+#profile-image {
+  height: 40px;
+}
+
+.toolbar {
+  /* width: 190px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-toolbar {
   display: flex;
   column-gap: 10px;
-  height: 40px;
-  padding: 5px 8px;
+  height: 49px;
+  padding: 7px 10px;
+}
+
+#search-input {
+  padding-left: 30px;
 }
 
 #sidebar-contents {
@@ -28,20 +44,8 @@
   flex-direction: column;
 }
 
-.chat-tile {
-  display: flex;
-  color: white;
-  height: 72px;
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.chat-tile::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 0.1px;
-  background-color: var(--border-color);
+#connectivity-notification {
+  /* max-width: ; */
+  padding: 12px 15px;
+  background-color: var(--bg-color-secondary);
 }

@@ -7,10 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>WhatsApp</title>
 
+
 	<link rel="stylesheet" href="styles/core.css">
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/sidebar.css">
 	<link rel="stylesheet" href="styles/chat-window.css">
+	<link rel="stylesheet" href="styles/chat-tile.css">
+	<link rel="stylesheet" href="styles/chat-message.css">
 
 </head>
 
@@ -20,35 +23,46 @@
 		<!-- Sidebar -->
 		<aside id="sidebar">
 			<header id="sidebar-header">
-				<img src="https://picsum.photos/50" alt="">
+				<img src="https://picsum.photos/50" alt="" class="avatar" id="profile-image">
 				<div class="toolbar">
-					<img src="icons/communities.svg" alt="">
-					<img src="icons/status.svg" alt="">
-					<img src="icons/new-chat.svg" alt="">
-					<img src="icons/menu.svg" alt="">
+					<img src="icons/communities.svg" alt="" class="icon">
+					<img src="icons/status.svg" alt="" class="icon">
+					<img src="icons/new-chat.svg" alt="" class="icon">
+					<img src="icons/menu.svg" alt="" class="icon">
 				</div>
 			</header>
-			<div id="sidebar-search">
-				<input type="search" name="" id="" placeholder="Search or start a new chat">
-				<img src="icons/filter.svg" alt="">
+			<form id="search-toolbar">
+				<input type="search" name="" id="search-input" placeholder="Search or start a new chat">
+				<img src="icons/filter.svg" alt="" class="icon">
+			</form>
+			<div id="connectivity-notification">
+				<div>
+
+					Computer not connected
+				</div>
+				<span>
+					Make sure your computer has an active Internet connection
+				</span>
 			</div>
 			<section id="sidebar-contents">
 				<div id="chats-list">
-					<div class="chat-tile">Chat 1</div>
-					<div class="chat-tile">Chat 2</div>
-					<div class="chat-tile">Chat 3</div>
-					<div class="chat-tile">Chat 4</div>
-					<div class="chat-tile">Chat 5</div>
-					<div class="chat-tile">Chat 6</div>
-					<div class="chat-tile">Chat 7</div>
-					<div class="chat-tile">Chat 8</div>
-					<div class="chat-tile">Chat 9</div>
-					<div class="chat-tile">Chat 10</div>
-					<div class="chat-tile">Chat 11</div>
-					<div class="chat-tile">Chat 12</div>
-					<div class="chat-tile">Chat 13</div>
-					<div class="chat-tile">Chat 14</div>
-					<div class="chat-tile">Chat 15</div>
+					<div class="chat-tile">
+						<img src="https://picsum.photos/50" alt="" class="chat-tile-avatar">
+						<div class="chat-tile-details">
+							<div class="chat-tile-title">
+								<span>Chat 1</span>
+								<span>Tuesday</span>
+							</div>
+							<div class="chat-tile-subtitle">
+								<span>You: hey there! how are you?</span>
+								<span class="chat-tile-menu">
+									<img src="icons/pin.svg" alt="" class="">
+								</span>
+							</div>
+						</div>
+					</div>
+
+
 				</div>
 			</section>
 		</aside>
@@ -57,19 +71,70 @@
 		<!-- Chat window -->
 		<section id="chat-window">
 			<header id="chat-window-header">
-				<img src="" alt="">
-				<h3>Person 1</h3>
-				<img src="icons/search.svg" alt="">
-				<img src="icons/menu.svg" alt="Menu">
+				<img src="https://picsum.photos/50" alt="" class="avatar" id="profile-image">
+				<div id="active-chat-details">
+					<h3>Friends 🤗</h3>
+					<div class="info">You and 69 others</div>
+				</div>
+				<img src="icons/search.svg" alt="" class="icon">
+				<img src="icons/menu.svg" alt="Menu" class="icon">
 			</header>
-			<div>
+			<div id="chat-window-contents">
+
+				<div class="datestamp-container">
+					<span class="datestamp">
+						03/05/2023
+					</span>
+				</div>
+
+				<div class="chat-message-group">
+					<img src="https://picsum.photos/50" alt="" class="chat-message-avatar">
+					<div class="chat-messages">
+						<div class="chat-message chat-message-first">
+							<div class="chat-message-sender">Kshitiz Kamal</div>
+							Hey there, how are you doing?
+							<span class="chat-message-time">7:22 am</span>
+						</div>
+						<div class="chat-message">
+							Are you up to some fun this weekend?
+							<span class="chat-message-time">7:22 am</span>
+						</div>
+						<div class="chat-message">
+							I'm thinking of going to the beach
+							<span class="chat-message-time">7:22 am</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="chat-message-group">
+					<img src="https://picsum.photos/50" alt="" class="chat-message-avatar">
+					<div class="chat-messages">
+						<div class="chat-message-container">
+							<div class="chat-message chat-message-first">
+								<div class="chat-message-sender">Kshitiz Kamal</div>
+								Hey there, how are you doing?
+								<span class="chat-message-time">7:22 am</span>
+							</div>
+							<img src="icons/emoji.svg" alt="" class="icon reaction-button">
+						</div>
+						<div class="chat-message">
+							Are you up to some fun this weekend?
+							<span class="chat-message-time">7:22 am</span>
+						</div>
+						<div class="chat-message">
+							I'm thinking of going to the beach
+							<span class="chat-message-time">7:22 am</span>
+						</div>
+					</div>
+				</div>
 
 			</div>
 			<footer id="chat-window-footer">
-				<img src="icons/emoji.svg" alt="">
-				<img src="icons/attachment.svg" alt="">
-				<input type="search" name="message" id="chat-box" placeholder="Type a message">
-				<img src="icons/mic.svg" alt="">
+				<img src="icons/emoji.svg" alt="" class="icon">
+				<img src="icons/attachment.svg" alt="" class="icon">
+				<input type="search" name="message" id="compose-chat-box" placeholder="Type a message"
+					autocomplete="off">
+				<img src="icons/mic.svg" alt="" class="icon">
 			</footer>
 		</section>
 		<!-- Chat window ends -->

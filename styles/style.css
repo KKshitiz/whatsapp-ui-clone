@@ -1,7 +1,3 @@
-img {
-  background-color: white;
-}
-
 body {
   background-color: var(--bg-color);
 }
@@ -10,4 +6,15 @@ main {
   display: flex;
   align-items: stretch;
   height: 100%;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.icon {
+  padding: 8px;
+  cursor: pointer;
+  filter: invert(79%) sepia(18%) saturate(148%) hue-rotate(158deg)
+    brightness(91%) contrast(88%);
 }

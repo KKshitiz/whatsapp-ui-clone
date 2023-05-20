@@ -21,6 +21,7 @@
   --border-color: var(--light-grey);
   --compose-bg-color: var(--light-grey);
   --input-placeholder-color: var(--text-secondary);
+  --dropdown-color: var(--primary);
 
   --border-radius: 0.5rem;
   --header-height: 59px;
@@ -77,4 +78,13 @@ input[type="search"]::-webkit-search-cancel-button {
   width: 10px;
   background: red;
   cursor: pointer;
+}
+
+ul > li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

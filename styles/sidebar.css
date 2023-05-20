@@ -45,7 +45,7 @@
   flex-direction: column;
 }
 
-#connectivity-notification {
+.connectivity-notification {
   padding: 12px 15px;
   background-color: var(--bg-color-secondary);
   display: flex;
@@ -54,12 +54,12 @@
   color: var(--text-secondary);
 }
 
-#connectivity-notification-title {
+.connectivity-notification-title {
   color: var(--text-primary-strong);
   font-size: 16px;
 }
 
-#connectivity-notification > img {
+.connectivity-notification > img {
   filter: invert(82%) sepia(49%) saturate(1077%) hue-rotate(328deg)
     brightness(103%) contrast(103%);
 }

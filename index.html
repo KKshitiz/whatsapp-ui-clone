@@ -28,17 +28,28 @@
 					<img src="icons/communities.svg" alt="" class="icon">
 					<img src="icons/status.svg" alt="" class="icon">
 					<img src="icons/new-chat.svg" alt="" class="icon">
-					<img src="icons/menu.svg" alt="" class="icon">
+					<div class="dropdown">
+						<img src="icons/menu.svg" alt="" class="icon dropdown-button">
+						<div class="dropdown-content">
+							<a href="#">New group</a>
+							<a href="#">New community</a>
+							<a href="#">Archived</a>
+							<a href="#">Starred messages</a>
+							<a href="#">Select chats</a>
+							<a href="#">Settings</a>
+							<a href="#">Log out</a>
+						</div>
+					</div>
 				</div>
 			</header>
 			<form id="search-toolbar">
 				<input type="search" name="" id="search-input" placeholder="Search or start a new chat">
 				<img src="icons/filter.svg" alt="" class="icon">
 			</form>
-			<div id="connectivity-notification">
-				<img src="icons/warning.svg" alt="">
+			<div class="connectivity-notification">
+				<img src="icons/warning.svg" alt="Offline warning">
 				<div>
-					<div id="connectivity-notification-title">
+					<div class="connectivity-notification-title">
 						Computer not connected
 					</div>
 					<span>
@@ -180,8 +191,8 @@
 					autocomplete="off">
 				<img src="icons/mic.svg" alt="" class="icon">
 			</footer>
-			<a class="scroll-to-top-button" href="#"><img src="icons/arrow-down.svg" alt="" class="icon scroll-to-top-button-icon"
-					height=""></a>
+			<a class="scroll-to-top-button" href="#"><img src="icons/arrow-down.svg" alt=""
+					class="icon scroll-to-top-button-icon" height=""></a>
 		</section>
 		<!-- Chat window ends -->
 
@@ -189,6 +200,7 @@
 
 	<!-- Import Scripts -->
 	<script src="scripts/scroll-to-top.js"></script>
+	<script src="scripts/check-connectivity.js"></script>
 </body>
 
 </html>

@@ -32,7 +32,8 @@
 }
 
 .chat-tile-details {
-  width: 100%;
+  flex-grow: 1;
+
   padding-right: 15px;
 }
 
@@ -46,8 +47,17 @@
   font-size: 17px;
 }
 
+.chat-tile-title > :nth-child(2) {
+  font-size: 12px;
+}
+
 .chat-tile-subtitle {
   display: flex;
+  white-space: nowrap;
+
+  /* max-width: 100%; */
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
   justify-content: space-between;
 }
 

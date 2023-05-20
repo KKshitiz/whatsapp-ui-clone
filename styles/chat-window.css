@@ -17,6 +17,11 @@
   background-color: var(--primary);
 }
 
+.contact-menu {
+  position: absolute;
+  right: 5px;
+}
+
 #active-chat-details {
   flex-grow: 1;
 }

@@ -18,3 +18,12 @@ main {
   filter: invert(79%) sepia(18%) saturate(148%) hue-rotate(158deg)
     brightness(91%) contrast(88%);
 }
+
+.pin {
+  filter: invert(79%) sepia(18%) saturate(148%) hue-rotate(158deg)
+    brightness(91%) contrast(88%);
+}
+
+.hidden {
+  visibility: hidden;
+}

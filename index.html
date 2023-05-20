@@ -36,13 +36,15 @@
 				<img src="icons/filter.svg" alt="" class="icon">
 			</form>
 			<div id="connectivity-notification">
+				<img src="icons/warning.svg" alt="">
 				<div>
-
-					Computer not connected
+					<div id="connectivity-notification-title">
+						Computer not connected
+					</div>
+					<span>
+						Make sure your computer has an active Internet connection
+					</span>
 				</div>
-				<span>
-					Make sure your computer has an active Internet connection
-				</span>
 			</div>
 			<section id="sidebar-contents">
 				<div id="chats-list">
@@ -50,13 +52,13 @@
 						<img src="https://picsum.photos/50" alt="" class="chat-tile-avatar">
 						<div class="chat-tile-details">
 							<div class="chat-tile-title">
-								<span>Chat 1</span>
+								<span>Friends</span>
 								<span>Tuesday</span>
 							</div>
 							<div class="chat-tile-subtitle">
 								<span>You: hey there! how are you?</span>
 								<span class="chat-tile-menu">
-									<img src="icons/pin.svg" alt="" class="">
+									<img src="icons/pin.svg" alt="" class="pin">
 								</span>
 							</div>
 						</div>
@@ -127,6 +129,48 @@
 						</div>
 					</div>
 				</div>
+				<div class="chat-message-group">
+					<img src="https://picsum.photos/50" alt="" class="chat-message-avatar">
+					<div class="chat-messages">
+						<div class="chat-message-container">
+							<div class="chat-message chat-message-first">
+								<div class="chat-message-sender">Kshitiz Kamal</div>
+								Hey there, how are you doing?
+								<span class="chat-message-time">7:22 am</span>
+							</div>
+							<img src="icons/emoji.svg" alt="" class="icon reaction-button">
+						</div>
+						<div class="chat-message">
+							Are you up to some fun this weekend?
+							<span class="chat-message-time">7:22 am</span>
+						</div>
+						<div class="chat-message">
+							I'm thinking of going to the beach
+							<span class="chat-message-time">7:22 am</span>
+						</div>
+					</div>
+				</div>
+				<div class="chat-message-group">
+					<img src="https://picsum.photos/50" alt="" class="chat-message-avatar">
+					<div class="chat-messages">
+						<div class="chat-message-container">
+							<div class="chat-message chat-message-first">
+								<div class="chat-message-sender">Kshitiz Kamal</div>
+								Hey there, how are you doing?
+								<span class="chat-message-time">7:22 am</span>
+							</div>
+							<img src="icons/emoji.svg" alt="" class="icon reaction-button">
+						</div>
+						<div class="chat-message">
+							Are you up to some fun this weekend?
+							<span class="chat-message-time">7:22 am</span>
+						</div>
+						<div class="chat-message">
+							I'm thinking of going to the beach
+							<span class="chat-message-time">7:22 am</span>
+						</div>
+					</div>
+				</div>
 
 			</div>
 			<footer id="chat-window-footer">
@@ -136,11 +180,15 @@
 					autocomplete="off">
 				<img src="icons/mic.svg" alt="" class="icon">
 			</footer>
+			<a class="scroll-to-top-button" href="#"><img src="icons/arrow-down.svg" alt="" class="icon scroll-to-top-button-icon"
+					height=""></a>
 		</section>
 		<!-- Chat window ends -->
 
 	</main>
 
+	<!-- Import Scripts -->
+	<script src="scripts/scroll-to-top.js"></script>
 </body>
 
 </html>

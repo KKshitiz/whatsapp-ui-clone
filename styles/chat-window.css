@@ -3,6 +3,7 @@
 
   display: flex;
   flex-direction: column;
+  position: relative;
   /* background: url(../images/chat-bg.png); */
 }
 
@@ -10,6 +11,7 @@
   color: white;
   display: flex;
   align-items: center;
+  column-gap: 12px;
   height: var(--header-height);
   padding: 15px 20px;
   background-color: var(--primary);
@@ -70,4 +72,29 @@
   border-radius: var(--border-radius);
   padding: 8px 10px;
   margin: 13px 0px;
+}
+
+.scroll-to-top-button {
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+  background-color: var(--primary);
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  transition: all 0.1s ease-in-out;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-to-top-button-icon {
+  height: 35px;
+  width: 35px;
+}
+
+.shrink {
+  height: 0;
+  width: 0;
 }
